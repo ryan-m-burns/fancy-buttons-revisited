@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-const LightSwitchButton = () => {
+const LightSwitchButton = (props) => {
+  const [light, setLight] = useState();
+
   return (
     <button className="LightSwitchButton">
       {/* When the state is on */}

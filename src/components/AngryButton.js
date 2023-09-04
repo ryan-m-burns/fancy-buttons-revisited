@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const AngryButton = (props) => {
-  const [anger, setAnger] = useState(0);
+  const { anger, setAnger } = props;
 
   const handleClick = () => {
     if (anger < 1) {

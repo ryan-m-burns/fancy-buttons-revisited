@@ -7,14 +7,17 @@ import { useState } from "react";
 function App() {
   const [light, setLight] = useState("off");
   const [anger, setAnger] = useState(0);
-  
+  const [clickAmount, setClickAmount] = useState(0);
 
   return (
     <div className={`App`}>
       <h1>Fancy Buttons!</h1>
       <section>
         <AngryButton anger={anger} setAnger={setAnger} />
-        <CounterButton />
+        <CounterButton
+          clickAmount={clickAmount}
+          setClickAmount={setClickAmount}
+        />
         <LightSwitchButton light={light} setLight={setLight} />
         <TextRepeaterButton />
       </section>

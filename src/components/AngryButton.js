@@ -12,7 +12,7 @@ const AngryButton = (props) => {
   };
   return (
     <button
-      style={{ backgroundColor: "rgba(255,0,0,${anger})" }}
+      style={{ backgroundColor: `rgba(255,0,0,${anger})` }}
       onClick={handleClick}
       className="AngryButton"
     >

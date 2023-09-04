@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const LightSwitchButton = (props) => {
   const { light, setLight } = props;
 

@@ -7,6 +7,7 @@ import { useState } from "react";
 function App() {
   const [light, setLight] = useState("off");
   const [anger, setAnger] = useState(0);
+  
 
   return (
     <div className={`App`}>

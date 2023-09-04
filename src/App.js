@@ -11,7 +11,8 @@ function App() {
   const [clickAmount, setClickAmount] = useState(0);
   const [repetitions, setRepetitions] = useState(1);
 
-  const dark = (light === 'off') ? 'dark' : '';
+  const switchLight = () => setLight(light === "on" ? "off" : "on");
+  const dark = light === "off" ? "dark" : "";
 
   return (
     <div className={`App ${dark}`}>
@@ -22,7 +23,7 @@ function App() {
           clickAmount={clickAmount}
           setClickAmount={setClickAmount}
         />
-        <LightSwitchButton light={light} setLight={setLight} />
+        <LightSwitchButton light={light} switchLight={switchLight} />
         <TextRepeaterButton
           repetitions={repetitions}
           setRepetitions={setRepetitions}
